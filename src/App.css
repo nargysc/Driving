@@ -1,0 +1,101 @@
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 400;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+}
+
+:root {
+    --mainInputTextColor: #4f556a;
+    --mainHoverBgdColor: #F7F9FE;
+    --mainBlackColor: #000000;
+    --bodyColor:rgb(48, 95, 108);  
+    --mainWhiteColor: #FFFFFF;
+    --mainTextColor: #1A2A45;
+    --mainBlueColor: #040404;
+    --mainLightGreyColor: #ECEEF8;
+    --mainInputBorderColor: #aab2e1;  
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+body { 
+    background: #536976;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+input {
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none; 
+}
+button {
+    border: none;
+}
+fieldset {
+    border: 0;
+}
+.wrapper-page {
+ background: #D3CCE3;  /* fallback for old browsers */ 
+ background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    border-radius: 50px;
+}
+.wrapper-page__container {
+   width: 100%;
+   margin: 0 auto;
+   padding: 24px 126px 112px;
+   
+}
+.wrapper-page__title {
+    width: 30%;
+    font-weight: 500;
+    font-size: 35px;
+    margin-left: 20rem;
+
+}
+i {
+    width: 5rem;
+}
+
+@media(max-width: 840px) {
+    .wrapper-page__container {
+        padding: 50px 70px;
+    }
+}
+@media(max-width: 650px) {
+    .wrapper-page__container {
+        padding: 45px 30px;
+    }
+    .wrapper-page__title {
+        font-size: 45px;
+        padding-left: 20px;
+        margin-bottom: -40px;
+    
+    }
+    .wrapper-page {
+        min-height: 100vh;
+    }
+}
+@media(max-width: 520px) {
+    .wrapper-page__title {
+        font-size: 34px;
+    }
+    .wrapper-page__container {
+        padding: 35px 20px;
+    }
+}
+
